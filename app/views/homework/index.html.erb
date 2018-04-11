@@ -1,0 +1,16 @@
+<h1>3번째 세션 복습</h1>
+<p>게시판 만들기</p>
+
+<form action="/homework/create" method="get">
+  제목: <input type="text" name="title"><br>
+  내용: <input type="text" name="content"><br>
+  <input type="submit" value="제출!!">
+</form>
+<hr>
+<% @homework123.each do |each_homework| %>
+    <%= each_homework.title %>
+    <%= each_homework.content %>
+    <br>
+<% end %>
+<hr>
+
